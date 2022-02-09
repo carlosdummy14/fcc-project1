@@ -7,7 +7,7 @@ function App() {
   const [dark, setDark] = useState(false);
   
   const handleDark = () => {
-    setDark(!dark)
+    setDark(prevDark => !prevDark)
   };
   
   return (
